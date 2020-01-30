@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Not Invasive</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/notinvasive.css" />
+  </head>
+  <body>
+    <div id="topBar">
+      <a href="{{ url_for('scanner') }}" id="backLink"> <- Back </a>
+    </div>
+
+    <h1>No Invasive Species Detected</h1>
+    <p>The specimen in your photo {{name}} did not match the invasive species in our dataset</p>
+    <p>Thank you for working with our team to protect our ecosystems!</p>
+
+  </body>
+</html>

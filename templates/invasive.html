@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Invasive</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/invasive.css" />
+  </head>
+  <body>
+    <div id="topBar">
+      <a href="{{ url_for('scanner') }}" id="backLink"> <- Back </a>
+    </div>
+
+    <h1>Invasive Species Detected</h1>
+
+    <div id="images">
+      <div style="display:inline-block;vertical-align:top;">
+        <img id="imageitself" class="contents" src='../static/images/dummy.png'>
+      </div>
+      <div style="display:inline-block;">
+        <p>We detected the specimen in your photo {{name}} as {{speciesName}}</p>
+        <p>Thank you for working with our team to protect our ecosystems!</p>
+      </div>
+    </div>
+
+
+  </body>
+</html>
